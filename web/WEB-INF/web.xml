@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>HelloWorld</servlet-name>
+        <servlet-class>servlets.HelloWorld</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RequestHeaders</servlet-name>
+        <servlet-class>servlets.RequestHeaders</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RequestInfo</servlet-name>
+        <servlet-class>servlets.RequestInfo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWorld</servlet-name>
+        <url-pattern>/HelloWorld</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RequestHeaders</servlet-name>
+        <url-pattern>/RequestHeaders</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RequestInfo</servlet-name>
+        <url-pattern>/RequestInfo</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+        <servlet>
+        <servlet-name>faces</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>faces</servlet-name>
+        <url-pattern>/faces/*</url-pattern>
+    </servlet-mapping>
+    
+</web-app>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+	<h:head>
+		<title>JSF hello world example.</title>
+	</h:head>
+    <h:body> 
+    	 <h3><h:outputText value="${helloWorld.message}"/></h3>
+         <h3>Mensagem de Olá mundo</h3>
+         <h:commandButton value="Meu Botão"
+                 styleClass="estiloBotao"
+                 disabled="true"  />
+         <h:inputText
+                maxlength="150"
+                required="true"
+                requiredMessage="O Nome é obrigatório" /> 
+         <h4>Botão padrão</h4>
+             <input styleClass="estiloBotao" 
+                    type="button" 
+                    value="Intelicense botão" />
+        <h:messages
+                errorClass="danger"
+                infoClass="info"
+        	warnClass="warn">
+        </h:messages>
+    </h:body>
+ 
+</html>
