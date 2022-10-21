@@ -16,7 +16,7 @@ public class Conexao {
     }
     protected static Connection abrirConexao() throws SQLException {
         registrarDriver();
-        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306?useTimezone=true&serverTimezone=UTC", "root", "");
+        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306?useTimezone=true&serverTimezone=UTC", "root", "root");
         return c;
     }
 }
